@@ -1,26 +1,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Image
 %define		pnam	Size
-Summary:	Image::Size Perl module
-Summary(cs):	Modul Image::Size pro Perl
-Summary(da):	Perlmodul Image::Size
-Summary(de):	Image::Size Perl Modul
-Summary(es):	Módulo de Perl Image::Size
-Summary(fr):	Module Perl Image::Size
-Summary(it):	Modulo di Perl Image::Size
-Summary(ja):	Image::Size Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Image::Size ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Image::Size
-Summary(pl):	Modu³ Perla Image::Size
-Summary(pt):	Módulo de Perl Image::Size
-Summary(pt_BR):	Módulo Perl Image::Size
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Image::Size
-Summary(sv):	Image::Size Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Image::Size
-Summary(zh_CN):	Image::Size Perl Ä£¿é
+Summary:	Image::Size reads the dimensions of an image in several popular formats.
+Summary(pl):	Image::Size odczytuje rozmiary obrazków w kilku popularnych formatach.
 Name:		perl-Image-Size
 Version:	2.99
 Release:	1
+Epoch:		1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -29,12 +15,22 @@ BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%description
-Image::Size reads the dimensions of an image in several popular
-formats.
+%define		_noautoreq	'perl(Image::Magick)'
 
-%description -l pl
-Image::Size odczytuje rozmiary obrazków w kilku popularnych formatach.
+%description
+Image::Size is a library based on the image-sizing code in the
+wwwimagesize script, a tool that analyzes HTML files and adds HEIGHT
+and WIDTH tags to IMG directives.  Image::Size has generalized that
+code to return a raw (X, Y) pair, and included wrappers to pre-format
+that output into either HTML or a set of attribute pairs suitable for
+the CGI.pm library by Lincoln Stein.
+
+Currently, Image::Size can size images in XPM, XBM, GIF, JPEG, PNG, MNG,
+TIFF, the PPM family of formats (PPM/PGM/PBM) and if Image::Magick is
+installed, the formats supported by it.
+
+# %description -l pl
+# TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
