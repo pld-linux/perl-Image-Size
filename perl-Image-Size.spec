@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Image
 %define		pnam	Size
-Summary:	Image::Size reads the dimensions of an image in several popular formats
-Summary(pl):	Image::Size odczytuje rozmiary obrazków w kilku popularnych formatach
+Summary:	Image::Size - read the dimensions of an image in several popular formats
+Summary(pl):	Image::Size - odczyt rozmiarów obrazków w kilku popularnych formatach
 Name:		perl-Image-Size
 Version:	2.992
 Release:	1
