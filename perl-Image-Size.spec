@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Image
 %define	pnam	Size
-%include	/usr/lib/rpm/macros.perl
 Summary:	Image-Size perl module
 Summary(pl):	Modu³ perla Image-Size
 Name:		perl-Image-Size
 Version:	2.904
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ formats.
 Image-Size odczytuje rozmiary obrazków w kilku popularnych formatach.
 
 %prep
-%setup -q -n Image-Size-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
