@@ -5,12 +5,12 @@ Summary:	Image::Size reads the dimensions of an image in several popular formats
 Summary(pl):	Image::Size odczytuje rozmiary obrazków w kilku popularnych formatach
 Name:		perl-Image-Size
 Version:	2.991
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,7 +46,8 @@ bibliotekê.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -61,9 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README
 %attr(755,root,root) %{_bindir}/imgsize
-%{perl_sitelib}/Image/Size.pm
-%dir %{perl_sitelib}/auto/Image
-%dir %{perl_sitelib}/auto/Image/Size
-%{perl_sitelib}/auto/Image/Size/autosplit.ix
-%{perl_sitelib}/auto/Image/Size/*.al
+%{perl_vendorlib}/Image/Size.pm
+%dir %{perl_vendorlib}/auto/Image
+%dir %{perl_vendorlib}/auto/Image/Size
+%{perl_vendorlib}/auto/Image/Size/autosplit.ix
+%{perl_vendorlib}/auto/Image/Size/*.al
 %{_mandir}/man[13]/*
