@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changelog README
+%doc ChangeLog README
 %attr(755,root,root) %{_bindir}/imgsize
 %{perl_sitelib}/Image/Size.pm
 %dir %{perl_sitelib}/auto/Image
