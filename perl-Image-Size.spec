@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla Image-Size
 Name:		perl-Image-Size
 Version:	2.901
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Image/Image-Size-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Image/Image-Size-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -15,7 +15,8 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Image-Size reads the dimensions of an image in several popular formats.
+Image-Size reads the dimensions of an image in several popular
+formats.
 
 %description -l pl
 Image-Size odczytuje rozmiary obrazków w kilku popularnych formatach.
