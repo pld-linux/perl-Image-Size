@@ -2,10 +2,11 @@
 Summary:	Image-Size perl module
 Summary(pl):	Modu³ perla Image-Size
 Name:		perl-Image-Size
-Version:	2.901
-Release:	3
+Version:	2.903
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Image/Image-Size-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -35,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Image/Size
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man[13]/* \
