@@ -4,7 +4,7 @@
 Summary:	Image::Size reads the dimensions of an image in several popular formats
 Summary(pl):	Image::Size odczytuje rozmiary obrazków w kilku popularnych formatach
 Name:		perl-Image-Size
-Version:	2.99
+Version:	2.991
 Release:	1
 Epoch:		1
 License:	GPL
