@@ -2,8 +2,8 @@
 Summary:	Image-Size perl module
 Summary(pl):	Modu³ perla Image-Size
 Name:		perl-Image-Size
-Version:	2.903
-Release:	2
+Version:	2.904
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
