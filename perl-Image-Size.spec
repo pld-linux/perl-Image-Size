@@ -19,8 +19,8 @@ Summary(sv):	Image::Size Perlmodul
 Summary(uk):	Модуль для Perl Image::Size
 Summary(zh_CN):	Image::Size Perl дё©И
 Name:		perl-Image-Size
-Version:	2.904
-Release:	8
+Version:	2.99
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
