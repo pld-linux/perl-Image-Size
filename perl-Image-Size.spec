@@ -7,7 +7,7 @@ Name:		perl-Image-Size
 Version:	2.992
 Release:	1
 Epoch:		1
-License:	GPL
+License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2e278c39a9379f5fefaf6eb288208bd8
