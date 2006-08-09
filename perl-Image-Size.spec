@@ -4,13 +4,13 @@
 Summary:	Image::Size - read the dimensions of an image in several popular formats
 Summary(pl):	Image::Size - odczyt rozmiarów obrazków w kilku popularnych formatach
 Name:		perl-Image-Size
-Version:	2.992
-Release:	2
+Version:	3.0
+Release:	0.1
 Epoch:		1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2e278c39a9379f5fefaf6eb288208bd8
+# Source0-md5:	f77eba3d3e5ac6efcc6058f527bb180f
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
