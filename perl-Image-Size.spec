@@ -2,7 +2,7 @@
 %define		pdir	Image
 %define		pnam	Size
 Summary:	Image::Size - read the dimensions of an image in several popular formats
-Summary(pl):	Image::Size - odczyt rozmiarów obrazków w kilku popularnych formatach
+Summary(pl.UTF-8):   Image::Size - odczyt rozmiarÃ³w obrazkÃ³w w kilku popularnych formatach
 Name:		perl-Image-Size
 Version:	3.0
 Release:	1
@@ -30,18 +30,18 @@ Currently, Image::Size can size images in XPM, XBM, GIF, JPEG, PNG,
 MNG, TIFF, the PPM family of formats (PPM/PGM/PBM) and if
 Image::Magick is installed, the formats supported by it.
 
-%description -l pl
-Image::Size to biblioteka oparta na kodzie sprawdzaj±cym rozmiar
-obrazków w skrypcie wwwimagesize - narzêdziu analizuj±cym pliki HTML i
-dodaj±cym atrybuty HEIGHT i WIDTH do znaczników IMG. Image::Size ma
-uogólniony kod tak, ¿eby zwraca³ parê (X,Y) oraz do³±czone wrappery
-preformatuj±ce to wyj¶cie do HTML-a lub zbioru par atrybutów dla
+%description -l pl.UTF-8
+Image::Size to biblioteka oparta na kodzie sprawdzajÄ…cym rozmiar
+obrazkÃ³w w skrypcie wwwimagesize - narzÄ™dziu analizujÄ…cym pliki HTML i
+dodajÄ…cym atrybuty HEIGHT i WIDTH do znacznikÃ³w IMG. Image::Size ma
+uogÃ³lniony kod tak, Å¼eby zwracaÅ‚ parÄ™ (X,Y) oraz doÅ‚Ä…czone wrappery
+preformatujÄ…ce to wyjÅ›cie do HTML-a lub zbioru par atrybutÃ³w dla
 biblioteki CGI.pm Lincolna Steina.
 
-Aktualnie Image::Size mo¿e odczytaæ rozmiar obrazków w formatach XPM,
+Aktualnie Image::Size moÅ¼e odczytaÄ‡ rozmiar obrazkÃ³w w formatach XPM,
 XBM, GIF, JPEG, PNG, MNG, TIFF i rodzinie PPM (PPM/PGM/PBM) oraz,
-je¶li zainstalowano Image::Magick, w formatach obs³ugiwanych przez tê
-bibliotekê.
+jeÅ›li zainstalowano Image::Magick, w formatach obsÅ‚ugiwanych przez tÄ™
+bibliotekÄ™.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
