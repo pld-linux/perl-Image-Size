@@ -2,7 +2,7 @@
 %define		pdir	Image
 %define		pnam	Size
 Summary:	Image::Size - read the dimensions of an image in several popular formats
-Summary(pl.UTF-8):   Image::Size - odczyt rozmiarów obrazków w kilku popularnych formatach
+Summary(pl.UTF-8):	Image::Size - odczyt rozmiarów obrazków w kilku popularnych formatach
 Name:		perl-Image-Size
 Version:	3.0
 Release:	1
