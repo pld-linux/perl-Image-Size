@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Image
 %define		pnam	Size
 Summary:	Image::Size - read the dimensions of an image in several popular formats
